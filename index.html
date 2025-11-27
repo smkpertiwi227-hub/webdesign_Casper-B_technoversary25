@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="icon" type="image/png" href="assets/img/leaf.png">
+    <title>AlamNusa - Indonesian Environmental Destinations</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet"  href="style/style.css">
+</head>
+
+<body>
+    
+    <!-- loading screen -->
+    <div id="preloader">
+        <div class="stage">
+
+            <div class="loader-ring">
+                <div class="leaf"></div>
+                <div class="leaf"></div>
+                <div class="leaf"></div>
+                <div class="leaf"></div>
+                <div class="leaf"></div>
+            </div>
+
+            <div class="logo-wrapper">
+                <div class="crown">
+                    <div class="crown-leaf cl-left"></div>
+                    <div class="crown-leaf cl-center"></div>
+                    <div class="crown-leaf cl-right"></div>
+                </div>
+
+                <div class="brand-box">
+                    <span class="text-alam">alam</span><br>
+                    <span class="text-nusa">nusa</span>
+                </div>
+
+                <div class="loading-bar-container">
+                    <div class="loading-bar"></div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+    <!-- navbar -->
+    <nav class="navbar desktop-nav" id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <span class="logo-text">AlamNusa</span>
+            </div>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#destinations" class="nav-link">Destinations</a></li>
+                <li><a href="#gallery-destination" class="nav-link">Gallery Destination</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+    <nav id="mobileNav" class="mobile-nav">
+        <ul class="mobile-nav-menu">
+            <li class="list"><a href="#home" class="nav-link"><i class="bx bxs-home"></i><span>Home</span></a></li>
+            <li class="list"><a href="#destinations" class="nav-link"><i class="bx bxs-map"></i><span>Destinasi</span></a></li>
+            <li class="list"><a href="#gallery-destination" class="nav-link"><i class="bx bxs-photo-album"></i><span>Galeri Destination</span></a></li>
+            <li class="list"><a href="#contact" class="nav-link"><i class="bx bxs-contact"></i><span>Kontak</span></a></li>
+        </ul>
+    </nav>
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <!-- home -->
+     
+    <section id="home" class="hero-section">
+         <video autoplay muted loop class="video-background">
+                <source src="assets/gif/home.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+       <div class="hero-overlay"></div>
+        <div class="hero-content" data-aos="fade-up" data-aos-duration="1200">
+            <h1 class="hero-title">Explore keindahan alam indonesia </h1>
+            <p class="hero-subtitle">Temukan pantai beniang,gunung megah,dan hutan tropis yang siap buat perjalanan anda lebih berkesan
+            </p>
+            <p class="hero-credits"></p>
+            <div class="hero-buttons">
+                <a href="#destinations" class="btn btn-primary">Explore sekarang</a>
+                <a href="#gallery-destination" class="btn btn-secondary">jelajahi destinasi</a>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </section>
+    <canvas id="bgParticles"></canvas>
+    <!-- destinations -->
+    <section id="destinations" class="destinations-section">
+        <div class="container" data-aos="fade-up">
+            <header class="section-header">
+                <h2 class="section-title">Destinasi Pilihan yang wajib anda kunjungi</h2>
+                <p class="section-description">Nikmati beragam pesona alam indonesia melalui slider slider interaktif berisi tempat-tempat terbaik yang sudah kami sediakan.</p>
+            </header>
+
+            <div class="alamnusa-slider-wrapper">
+                <div class="alamnusa-slide">
+                    <div class="alamnusa-item" data-id="1" style="background: url('assets/img/telaga biru cicerem2.jpg'); background-size:cover; background-position: center;">
+                        <div class="alamnusa-slider-content">
+                            <div class="name">Telaga Biru Cicerem</div>
+                            <div class="description">Airnya bening sampai kayak kaca yang baru dipoles, dengan warna biru toska yang bikin mata auto refresh. Ikan-ikan kecil berkeliaran tenang di bawah permukaan, seolah sengaja pamer ke pengunjung. Spot ini jadi favorit buat
+                                foto karena warnanya absurd banget, kayak filter bawaan alam. Suasananya adem, cocok buat kabur sejenak dari keramaian.</div>
+                            <button class="btn btn-primary" data-open="1">See More</button>
+                        </div>
+                    </div>
+                    <div class="alamnusa-item" data-id="2" style="background: url('assets/img/curug putri.jpg');">
+                        <div class="alamnusa-slider-content">
+                            <div class="name">Curug Putri</div>
+                            <div class="description">
+                                Air terjunnya mungil dan ramping, tapi atmosfernya nyantol di kepala. Dikelilingi dinding batu menyerupai “mini canyon”, tempat ini ngasih vibe petualangan ringan yang ramah buat siapa pun. Airnya jernih dingin halus dan kolamnya rasanya manggil-manggil
+                                untuk dicelupin kaki. Cocok buat healing low-budget tapi high-feel.
+                            </div>
+                            <button class="btn btn-primary" data-open="2">See More</button>
+                        </div>
+                    </div>
+                    <div class="alamnusa-item" data-id="3" style="background: url('assets/img/gunung ciremai.jpg'); background-size:cover; background-position: center;">
+                        <div class="alamnusa-slider-content">
+                            <div class="name">Gunung Ciremai</div>
+                            <div class="description">Raja sekaligus atap Jawa Barat. Puncaknya sering dibungkus kabut halus, bikin pendakian berasa masuk dunia lain. Jalurnya menantang, tapi setiap meter menghadiahi pemandangan hutan, edelweiss, dan hamparan langit yang susah
+                                dijelasin dengan kata-kata. Ciremai bukan sekadar gunung, tapi pengalaman spiritual yang kadang ngasih ceramah diam-diam ke pendaki.</div>
+                            <button class="btn btn-primary" data-open="3">See More</button>
+                        </div>
+                    </div>
+                    <div class="alamnusa-item" data-id="4" style="background: url('assets/img/kebun raya kuningan.jpg'); background-size:cover; background-position: center;">
+                        <div class="alamnusa-slider-content">
+                            <div class="name">kebun raya kuningan</div>
+                            <div class="description">Ini versi “taman botani mode santai”. Penuh koleksi tanaman, pepohonan tinggi, dan jalur-jalur yang bikin pengunjung kepikiran buat refleksi hidup sebentar. Udara segarnya terasa kayak tombol reset otak. Tempat ideal buat piknik,
+                                edukasi, atau sekadar jalan-jalan biar dada lega.</div>
+                            <button class="btn btn-primary" data-open="4">See More</button>
+                        </div>
+                    </div>
+                    <div class="alamnusa-item" data-id="5" style="background: url('assets/img/cibulan.jpg'); background-size:cover; background-position: center;">
+                        <div class="alamnusa-slider-content">
+                            <div class="name">cibulan</div>
+                            <div class="description">Pemandian yang udah legendaris sejak zaman leluhur masih ngirim SMS. Airnya jernih dingin, tapi tetap ramah kulit. Yang bikin unik banget adalah ikan-ikan gede jinak yang berenang bareng pengunjung. Rasanya kayak mandi ditemenin
+                                bodyguard bersirip. Tempat ini punya aura tradisi yang kuat, lengkap dengan cerita-cerita lokal yang bikin pengalaman makin berwarna. Cocok buat relaksasi, ritual cuci stres, atau sekadar nostalgia vibes masa kecil.</div>
+                            <button class="btn btn-primary" data-open="5">See More</button>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="alamnusa-slider-button-group">
+                <button id="prev"><i class="fa-solid fa-chevron-left"></i></button>
+                <button id="next"><i class="fa-solid fa-chevron-right"></i></button>
+            </div>
+        </div>
+        </div>
+
+        <div class="modal" role="dialog" aria-modal="true" aria-hidden="true" id="myModal">
+            <div class="modal-content">
+                <div class="modal-media">
+                    <img id="modalImage" src="" alt="Destination Image">
+                </div>
+                <div class="modal-body">
+                    <h2 id="modalTitle"></h2>
+                    <p id="modalDescription"></p>
+                    <iframe id="modalMap" class="modal-map" src="" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="modal-footer">
+                    <button class="close-btn" id="closeModalBtn">Tutup</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- gallery-destination -->
+    <section id="gallery-destination" class="gallery-destination">
+        <div class="container">
+            <header class="section-header" data-aos="fade-up">
+                <h2 class="section-title">Jelajahi berbagai destinasi alam </h2>
+                <p class="section-description">Temukan destinasi terbaik di indonesia dan gunakan filter untuk mencari tempat yang paling sesuai dengan minat anda</p>
+            </header>
+            <div class="choice-container">
+                <div class="choice-filters" data-aos="fade-right">
+                    <h3 class="filter-title">Filter by Category</h3>
+                    <div class="filter-options">
+                        <div class="search-container">
+                            <input type="text" id="searchInput" placeholder="Search destination..." autocomplete="off">
+                        </div>
+
+                        <button class="filter-btn active" data-filter="all">Semua destinasi</button>
+                        <button class="filter-btn" data-filter="lakes">Danau</button>
+                        <button class="filter-btn" data-filter="waterfalls">Air Terjun</button>
+                        <button class="filter-btn" data-filter="mountains">Gunung</button>
+                        <button class="filter-btn" data-filter="parks">Taman</button>
+                        <button class="filter-btn" data-filter="adventure">Petualangan</button>
+                    </div>
+
+
+
+                    <div class="preference-selector">
+                        <h4>Level aktivitas</h4>
+                        <select class="activity-select">
+                            <option value="relaxed">Ringan & Santai</option>
+                            <option value="moderate" selected>Aktivitas sedang</option>
+                            <option value="adventurous">Aktif & Menantang</option>
+                        </select>
+                    </div>
+                    <button class="btn btn-primary generate-btn" id="generatePlan">Buat perjalanan rekomendasi</button>
+                </div>
+
+                <div class="choice-results" data-aos="fade-left">
+                    <div class="results-header">
+                        <h3>Rekomendasi hanya untuk mu</h3>
+                        <span class="results-count">6 destinations found</span>
+                    </div>
+                    <div class="results-grid" id="resultsGrid">
+                        <div class="result-item" data-category="lakes">
+                            <img src="assets/img/telaga biru cicerem.jpg" alt="Telaga Biru Cicerem">
+                            <div class="result-content">
+                                <h4>Telaga Biru Cicerem</h4>
+                                <p>Danau bening dengan ikan jinak dan warna biru kehijauan.</p>
+                                <span class="result-badge">Hot Spot</span>
+                            </div>
+                        </div>
+
+                        <div class="result-item" data-category="waterfalls">
+                            <img src="assets/img/curug putri.jpg" alt="Curug Putri">
+                            <div class="result-content">
+                                <h4>Curug Putri</h4>
+                                <p>Air terjun eksotis dengan kolam alami untuk berenang.</p>
+                                <span class="result-badge">Recommended</span>
+                            </div>
+                        </div>
+
+                        <div class="result-item" data-category="mountains adventure">
+                            <img src="assets/img/gunung ciremai.jpg" alt="Gunung Ciremai">
+                            <div class="result-content">
+                                <h4>Gunung Ciremai</h4>
+                                <p>Gunung tertinggi Jawa Barat yang populer untuk pendakian.</p>
+                                <span class="result-badge">Epic Hike</span>
+                            </div>
+                        </div>
+
+                        <div class="result-item" data-category="parks relaxing">
+                            <img src="assets/img/kebun raya kuningan.jpg" alt="Kebun Raya Kuningan">
+                            <div class="result-content">
+                                <h4>Kebun Raya Kuningan</h4>
+                                <p>Destinasi edukasi botani dan piknik keluarga.</p>
+                                <span class="result-badge">Family</span>
+                            </div>
+                        </div>
+
+                        <div class="result-item" data-category="parks relaxing">
+                            <img src="assets/img/cibulan.jpg" alt="Cibulan">
+                            <div class="result-content">
+                                <h4>Cibulan</h4>
+                                <p>Objek wisata pemandian air jernih yang terkenal dengan ikan-ikan besar</p>
+                                <span class="result-badge">Family</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- CHATBOT UI -->
+    <div id="chatbotButton" class="chatbot-btn">💬</div>
+
+    <div id="chatbotWindow" class="chatbot-window">
+        <div class="chatbot-header">Chat Wisata Kuningan 🌿</div>
+        <div class="chatbot-messages" id="chatMessages"></div>
+        <input type="text" id="chatInput" placeholder="Tanya wisata di sini..." />
+        <button id="closeChat" class="close-chat">×</button>
+    </div>
+
+    <!-- Team developer -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <header class="section-header" data-aos="fade-up">
+                <h2 class="section-title">team developer</h2>
+                <p class="section-description">Website ini di kembangkan oleh tim developer muda yang fokus pada pengembangan web dan teknologi digital. Kami berkomitmen menghadirkan pengalaman pengguna yang lebih baik dari waktu ke waktu melalui pembaruan fitur dan peningkatan kualitas
+                    konten
+                </p>
+            </header>
+
+            <div class="contact-wrapper">
+                <div class="contact-info" data-aos="fade-right">
+                    <h3>Tentang team</h3>
+                    <p class="contact-description">Casper B team.</p>
+
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="bx bx-group"></i>
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </div>
+                            <div>
+                                <h4>team developer </h4>
+                                <p>Ilham nur salam</p>
+                                <p>Zaidan zia Ulhaq</p>
+                                <p>Reyhan nirhana</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>Email</h4>
+                                <p>smkpertiwi227@gmail.com</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-phone">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-7.01-7.01 19.79 19.79 0 0 1-3.07-8.63A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 2.81.7 2 2 0 0 1 2 1.76l.13 1.95a2 2 0 0 1-2 2.11 12.84 12.84 0 0 0-2.81.7A2 2 0 0 1 12 16.92z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>kontak</h4>
+                                <p>0821-2917-4258</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#" class="social-link" aria-label="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                            </svg>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.069-4.849.069-3.204 0-3.584-.012-4.849-.069-3.251-.149-4.771-1.692-4.919-4.919-.058-1.265-.069-1.644-.069-4.849 0-3.204.012-3.584.069-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.058 1.644-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.058 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.073 4.948.073 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.058-1.69-.073-4.949-.073zM12 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zm0 10.162a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.541-11.859a1.44 1.44 0 1 0 0 2.88 1.44 1.44 0 0 0 0-2.88z" />
+                            </svg>
+                        </a>
+
+                    </div>
+                </div>
+
+                <div class="contact-form" data-aos="fade-left">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject" required>
+                                <option value="" disabled selected>Select a subject</option>
+                                <option value="trip_planning">Trip Planning Inquiry</option>
+                                <option value="partnership">Partnership Opportunity</option>
+                                <option value="general">General Question</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>AlamNusa</h3>
+                    <p>Discover the beauty of Indonesian environmental destinations with expert guidance and sustainable tourism practices.</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Quick Links</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#destinations">Destinations</a></li>
+                            <li><a href="#your-choice">Plan Trip</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="#">Travel Guide</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">FAQs</a></li>
+                            <li><a href="#">Support</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Legal</h4>
+                        <ul>
+                            <li><a href="#">Privacy Policy</a></li>
+                            <li><a href="#">Terms of Service</a></li>
+                            <li><a href="#">Cookie Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>AI vibe coded development by <a href="https://biela.dev/" target="_blank" rel="noopener noreferrer">Biela.dev</a>, powered by <a href="https://teachmecode.ae/" target="_blank" rel="noopener noreferrer">TeachMeCode® Institute</a></p>
+            </div>
+        </div>
+        <div id="typingIndicator" class="typing hidden">
+            <img src="https://cdn-icons-png.flaticon.com/512/854/854878.png" class="typing-avatar">
+            <span class="dot"></span><span class="dot"></span><span class="dot"></span>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="script/script.js"></script>
+        
+    <div id="toast-container"></div>
+</body>
+
+</html>
