@@ -3,6 +3,7 @@
 ### *Explore Keindahan Alam Indonesia Bersama Wisata Kuningan*
 
 ## 👥 Team & Instansi
+•team Casper B
 - Ilham Nur Salam - [Smk pertiwi kuningan]
 - Zaidan Zia Ulhaq - [Smk pertiwi kuningan]
 - Reyhan Nirhana - [Smk pertiwi kuningan]
