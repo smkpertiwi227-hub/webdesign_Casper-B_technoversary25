@@ -121,7 +121,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 },
                 4: {
                     title: 'Kebun Raya Kuningan',
-                    img: 'assets/gif/kebun raya kuningan.gif',
+                    img: 'assets/gif/kebun raya Kuningan.gif',
                     desc: 'Kawasan konservasi dan edukasi yang menyajikan koleksi berbagai jenis tanaman tropis, pepohonan besar, dan ruang terbuka hijau yang luas. Tempat ini cocok untuk wisata keluarga, kegiatan edukatif, atau sekadar berjalan santai sembari menikmati udara sejuk khas pegunungan.',
                     mapQuery: 'Kebun Raya Kuningan'
                 },
