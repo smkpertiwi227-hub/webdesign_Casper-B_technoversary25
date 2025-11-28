@@ -48,17 +48,14 @@
   to { opacity: 0.55; }
 }
         
-        body {
-            font-family: 'Poppins', sans-serif;
-            color: var(--text-dark);
-            background: var(--light-color);
-            line-height: 1.6;
-            overflow-x: hidden;
-            position: relative;
-        }
-        
-        html {
-            scroll-behavior: smooth;
+        html,body{
+                    margin:0;
+                    padding:0;
+                    font-family: 'poppins' ,sans-serif;
+                    color: var(--text-dark);
+                    line-height:1.6;
+                    scroll-behavior:smooth;
+                    overflow-x: hidden;
         }
         
         .container {
@@ -1503,11 +1500,11 @@
         }
         
         #chatbotButton {
-            bottom: 90px !important;
+            bottom: 125px !important;
         }
         
         #chatbotWindow {
-            bottom: 90px !important;
+            bottom: 125px !important;
         }
         
         #chatbotWindow {
